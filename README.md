@@ -15,11 +15,20 @@ build.gradle:
 	}
 ```
 
-app/build.gradle dependency:
+app/build.gradle:
 
 ```gradle
 	dependencies {
 	        implementation 'com.github.marcandreappel:blurimage:1.0.0'
+	}
+```
+
+```gradle
+	defaultConfig {
+		...
+		
+		renderscriptTargetApi 21
+        	renderscriptSupportModeEnabled true
 	}
 ```
 
